@@ -1,0 +1,199 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(68, 66, 66);
+}
+
+                       /* ECRAN */
+
+.screen{
+    background-image: url(img/ecran.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.write{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    outline: none;
+    padding: 30px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.548);
+    box-shadow: 0 0 10px black;
+}
+
+                       /* CLAVIER  */
+
+.container-clavier{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(68, 66, 66);
+}
+
+.first-line, .second-line, .third-line, .fourth-line{
+    display: flex;
+}
+
+.second-line{
+    margin-left: 50px;
+}
+
+.third-line{
+    margin-left: 100px;
+}
+
+.touche{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 4px solid black;
+    box-shadow: 0 0 10px  black;
+    background-image: linear-gradient(to bottom right,grey, rgb(97, 95, 95), rgb(34, 33, 33));
+    transition: transform 0.1s ease-in-out;
+}
+
+.touche::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgb(34, 33, 33), rgb(151, 150, 150));
+    border: 1px solid black;
+    box-shadow: 0 0 100px 0 black;
+}
+
+.touche-large{
+    position: relative;
+    width: 140px;
+    height: 110px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 4px solid black;
+    box-shadow: 0 0 10px  black;
+    background-image: linear-gradient(to bottom right,grey, rgb(97, 95, 95), rgb(34, 33, 33));
+    transition: transform 0.1s ease-in-out;
+}
+
+.touche-large::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 105px;
+    height: 80px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgb(34, 33, 33), rgb(151, 150, 150));
+    border: 1px solid black;
+    box-shadow: 0 0 100px 0 black;
+}
+
+.touche-space{
+    position: relative;
+    width: 600px;
+    height: 110px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 4px solid black;
+    box-shadow: 0 0 10px  black;
+    background-image: linear-gradient(to bottom right,grey, rgb(97, 95, 95), rgb(34, 33, 33));
+    transition: transform 0.1s ease-in-out;
+}
+
+.touche-space::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 565px;
+    height: 80px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, rgb(34, 33, 33), rgb(151, 150, 150));
+    border: 1px solid black;
+    box-shadow: 0 0 100px 0 black;
+}
+
+.centrer{
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+}
+
+.touche-large .lettre{
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.touche .taille{
+    font-size: 25px;
+}
+
+.lettre{
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+
+.lettre img{
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
+
+.btn-light{
+    cursor: pointer;
+}
+
+.btn-light:active{
+    transform: translateY(5px);
+}
+
+
+body.flash{
+    color: lightskyblue;
+    text-shadow: 0 0 20px  rgb(41, 112, 156),0 0 40px  rgb(0, 106, 245);
+}
+
+
+
+
+
+
